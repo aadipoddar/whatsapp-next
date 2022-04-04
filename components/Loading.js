@@ -1,6 +1,21 @@
-function Loading() {
+import { Circle } from 'better-react-spinkit'
+import Image from 'next/image'
+
+const Loading = () => {
     return (
-        <div>Loading</div>
+        <center style={{ display: 'grid', placeItems: 'center', height: '100vh' }}>
+            <div>
+                <Image
+                    src='/logo.svg'
+                    alt=''
+                    style={{ marginBottom: 10 }}
+                    height={200}
+                    width={200}
+                />
+
+                <Circle color='#3CBC28' size={60} />
+            </div>
+        </center>
     )
 }
 

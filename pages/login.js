@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styled from 'styled-components'
 import { Button } from '@material-ui/core'
 import { auth, provider } from '../firebase'
@@ -16,7 +17,13 @@ function Login() {
             </Head>
 
             <LoginContainer>
-                <Logo src='http://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png' />
+                <Image
+                    src='/logo.svg'
+                    alt=''
+                    style={{ marginBottom: 50 }}
+                    height={200}
+                    width={200}
+                />
                 <Button onClick={signIn} variant='outlined'>Sign in with Google</Button>
             </LoginContainer>
         </Container>
@@ -40,8 +47,4 @@ const LoginContainer = styled.div`
   background-color: white;
   border-radius: 5px;
   box-shadow: 0px 4px 14px -3px rgba(0, 0, 0, 0.7);
-`
-
-const Logo = styled.img`
-  margin-bottom: 50px;
 `
