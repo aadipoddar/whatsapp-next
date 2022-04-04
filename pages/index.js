@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Sidebar from '../components/Sidebar'
 
 export default function Home() {
   return (
@@ -8,6 +9,8 @@ export default function Home() {
         <meta name="description" content="WhatsApp Clone with Next JS" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Sidebar />
     </div>
   )
 }
