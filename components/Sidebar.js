@@ -39,7 +39,7 @@ function Sidebar() {
     return (
         <Container>
             <Header>
-                <UserAvatar onClick={() => auth.signOut()} />
+                <UserAvatar src={user.photoURL} onClick={() => auth.signOut()} />
 
                 <IconsContainer>
                     <IconButton>
@@ -64,7 +64,7 @@ function Sidebar() {
                 <Chat
                     key={chat.id}
                     id={chat.id}
-                    user={chat.data().users}
+                    users={chat.data().users}
                 />
             ))}
 
