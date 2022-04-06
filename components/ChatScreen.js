@@ -7,13 +7,13 @@ import firebase from 'firebase'
 import TimeAgo from 'timeago-react'
 import { auth, db } from '../firebase'
 import getRecipientEmail from '../utils/getRecipientEmail'
+import Message from './Message'
 import { Avatar, IconButton } from '@material-ui/core'
 
 import MoreVertIcon from '@material-ui/icons/MoreVert'
 import AttachFileIcon from '@material-ui/icons/AttachFile'
 import MicIcon from '@material-ui/icons/Mic'
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon'
-import Message from './Message'
 
 function ChatScreen({ chat, messages }) {
 
